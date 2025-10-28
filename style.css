@@ -1,0 +1,84 @@
+/* style.css - Bright Theme */
+body {
+  background: #f0f8ff; /* Soft sky blue */
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #aaa;
+  width: 360px;
+  border: 2px solid #00bfff;
+}
+
+.brand {
+  color: #00bfff;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.display {
+  background: #e0ffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 18px;
+  border: 1px solid #00bfff;
+}
+
+.line {
+  text-align: right;
+  overflow-x: auto;
+  color: #333;
+}
+
+.mode-select {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #00bfff;
+  background: #f0ffff;
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #00bfff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background: #009acd;
+}
+
+

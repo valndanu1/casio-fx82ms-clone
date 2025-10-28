@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casio fx-82MS Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="brand">CASIO fx-82MS</div>
+    <div class="display">
+      <div id="line1" class="line"></div>
+      <div id="line2" class="line"></div>
+    </div>
+
+    <div class="mode-select">
+      <label for="mode">MODE:</label>
+      <select id="mode" onchange="setMode(this.value)">
+        <option value="COMP">COMP</option>
+        <option value="STAT">STAT</option>
+        <option value="TABLE">TABLE</option>
+      </select>
+    </div>
+
+    <div class="buttons">
+      <button onclick="powerOn()">ON</button>
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="delChar()">DEL</button>
+      <button onclick="insert('Ans')">Ans</button>
+
+      <button onclick="toggleShift()">SHIFT</button>
+      <button onclick="toggleAlpha()">ALPHA</button>
+      <button onclick="insert('sin(')">sin</button>
+      <button onclick="insert('cos(')">cos</button>
+
+      <button onclick="insert('tan(')">tan</button>
+      <button onclick="insert('log(')">log</button>
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+
+      <button onclick="insert('9')">9</button>
+      <button onclick="insert('/')">÷</button>
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+
+      <button onclick="insert('6')">6</button>
+      <button onclick="insert('*')">×</button>
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+
+      <button onclick="insert('3')">3</button>
+      <button onclick="insert('-')">−</button>
+      <button onclick="insert('0')">0</button>
+      <button onclick="insert('.')">.</button>
+
+      <button onclick="calculate()">=</button>
+      <button onclick="insert('+')">+</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
