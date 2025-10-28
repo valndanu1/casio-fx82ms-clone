@@ -73,7 +73,7 @@ button {
   background: #00bfff;
   color: white;
   cursor: pointer;
-  transition: background 0.3s;
+  transition:  0.3s;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
